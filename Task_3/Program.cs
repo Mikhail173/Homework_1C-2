@@ -8,6 +8,11 @@
 Console.WriteLine("Enter the number of the day");
 int day = Convert.ToInt32(Console.ReadLine());
 
+if ((day < 1) || (day > 7))
+{
+    Console.WriteLine("Incorrect number");
+}
+
 if ((day == 6) || (day == 7))
 {
     Console.WriteLine("Yes!");
